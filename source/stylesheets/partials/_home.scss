@@ -1,0 +1,40 @@
+article#home {
+  @include outer-container;
+
+  #hero {
+  margin-bottom: em(36);
+  margin-top: em(36);
+  padding-left: em(25);
+  padding-right: em(25);
+  padding-top: em(121.5);
+  height: 300px;
+    h1 {
+      font-size: $base-font-size * 3.375;
+      font-weight: 400;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+
+  #boxes {
+    @include span-columns(12);
+
+    .box {
+      @include span-columns(4 of 12);
+      padding-left: 16px;
+      padding-right: 16px;
+      h2 {
+        font-size: $base-font-size * 1.5;
+        font-weight: 400;
+      }
+      h3 {
+        font-size: $base-font-size * 1;
+        font-weight: 400;
+      }
+
+      .line {
+        margin-bottom: em(36);
+      }
+    }
+  }
+}

@@ -2,9 +2,31 @@
 title: Welcome to Middleman
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<article id="home">
+  <div id="hero">
+    <header>
+      <h1>Handcrafted websites and applications</h1>
+    </header>
+  </div>
+  <div id="boxes">
+    <div class="box">
+      <h2>About My Work</h2>
+      <div class="line">&nbsp;</div>
+      <p>I'm Anthony Candaele, a web developer living in Gent (Belgium).
+      I'm taking proud in building custom websites that are tailored to your business.</p>
+    </div>
+    <div class="box">
+      <h2>Latest Project</h2>
+      <div class="line">&nbsp;</div>
+      <h3>Action Maker</h3>
+        <%= image_tag "homepage_actionmaker.jpg" %>
+        <p>Event agency organizing teambuilding events and bachelor parties.</p>
+    </div>
+    <div class="box">
+      <h2>Blog</h2>
+      <div class="line">&nbsp;</div>
+      <p>Easy file uploads in Rails with Refile</p>
+      <p>Adding Pagination To Your Rails App with Kaminari</p>
+    </div>
+  </div>
+</article>

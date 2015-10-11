@@ -1,0 +1,11 @@
+div.line {
+  margin-top: 0;
+  margin-bottom: em(25);
+  width: 25%;
+  line-height: 0;
+  border-bottom: 4px solid $action-color;
+}
+
+.logo {
+  font-size: $base-font-size * 1.5;
+}

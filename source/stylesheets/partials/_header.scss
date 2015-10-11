@@ -1,0 +1,114 @@
+.navigation {
+  $large-screen: em(860) !default;
+  $large-screen: $large-screen;
+  border-bottom: 1px solid $light-gray;
+  @include media($large-screen) {
+    height: em(100);
+    padding-left: em(50);
+    padding-right: em(50);
+  }
+
+  // Mobile view
+  .navigation-menu-button {
+    display: inline;
+    float: right;
+    margin: 0;
+    margin-right: 16px;
+    @include media($large-screen) {
+      padding-top: 0.5em;
+    }
+    font-weight: 700;
+
+    i {
+      margin-right: em(8);
+    }
+
+    @include media ($large-screen) {
+      display: none;
+    }
+  }
+
+  // Nav menu
+  .navigation-wrapper {
+    @include clearfix;
+    position: relative;
+    padding-top: em(8);
+    @include media($large-screen) {
+      padding-top: em(25);
+    }
+  }
+
+  .logo {
+    padding-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+    @include media($large-screen) {
+      float: left;
+    }
+
+    img {
+      max-height: 2em;
+      padding-right: 1em;
+    }
+  }
+
+  nav {
+    float: none;
+
+    @include media ($large-screen) {
+      float: right;
+      line-height: 1.5em;
+      padding-top: 0.3em;
+    }
+
+  }
+
+  ul.navigation-menu {
+    clear: both;
+    @include media($large-screen) {
+      clear: none;
+    }
+    display: none;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    padding-right: 1em;
+    width: 100%;
+
+    @include media ($large-screen) {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+
+    &.show {
+      display: block;
+      @include media($large-screen) {
+        display: inline;
+      }
+    }
+  }
+
+  // Nav items
+  ul li.nav-link {
+    display: block;
+    text-align: right;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include media ($large-screen) {
+      background: transparent;
+      display: inline;
+      text-decoration: none;
+      width: auto;
+    }
+  }
+
+  li.nav-link a {
+    display: inline-block;
+
+    @include media ($large-screen) {
+      padding-right: 1em;
+    }
+  }
+}
