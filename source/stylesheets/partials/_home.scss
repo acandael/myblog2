@@ -18,22 +18,27 @@ article#home {
 
   #boxes {
     @include span-columns(12);
+    margin-bottom: em(54);
 
     .box {
       @include span-columns(4 of 12);
       padding-left: 16px;
       padding-right: 16px;
       h2 {
-        font-size: $base-font-size * 1.5;
+        font-size: $base-font-size * 1.777;
         font-weight: 400;
       }
       h3 {
-        font-size: $base-font-size * 1;
+        font-size: $base-font-size * 1.333;
         font-weight: 400;
       }
 
       .line {
         margin-bottom: em(36);
+      }
+
+      p {
+        font-size: $base-font-size * 1;
       }
     }
   }

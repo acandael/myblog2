@@ -1,3 +1,22 @@
+#main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -6em;
+}
+
+html, body {
+  height: 100%;
+}
+
+.push {
+  height: 50px;
+  @include media($large-screen) {
+    height: 4em;
+    padding: 4em;
+  }
+}
+
 div.line {
   margin-top: 0;
   margin-bottom: em(25);

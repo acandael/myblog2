@@ -1,0 +1,40 @@
+#blog {
+  @include outer-container;
+  @include media($large-screen){
+    @include shift(3);
+    @include span-columns(9);
+  }
+  .blogpost {
+    @include media($large-screen){
+      @include span-columns(9);
+    }
+    margin-bottom: 3.157em;
+
+    .line {
+      margin-top: 0;
+    }
+    footer {
+      height: inherit;
+      text-align: center;
+      border-top: none;
+    }
+    header {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+  .bodytext {
+    float: left;
+    margin-top: 1.777em;
+    margin-left: 0;
+    line-height: 1.6em;
+    font-size: $base-font-size * 1.333;
+
+    p {
+      margin-bottom: 3.157em;
+    }
+  }
+}

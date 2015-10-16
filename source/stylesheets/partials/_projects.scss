@@ -1,0 +1,95 @@
+section.portfolio {
+  @include outer-container;
+
+  @include media($large-screen) {
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+
+  article {
+
+    @include media($large-screen) {
+      @include span-columns(12);
+      margin-bottom: 3.157em;
+      margin-top: 2.396em;
+    }
+
+
+    div.screenshot {
+      text-align: center;
+      @include media($large-screen) {
+        @include span-columns(5 of 12);
+      }
+      img {
+        margin-bottom: 1.333em;
+        border: 2px solid lighten($medium-gray, 15);
+        padding: 3px;
+        width: 90%;
+      }
+    }
+    div.description {
+
+      @include media($large-screen){
+        @include span-columns(7 of 12);
+      }
+
+      padding-left: 1em;
+
+      header {
+        padding-top: 0px;
+        padding-left: 0px;
+      }
+    }
+
+    h1 {
+      font-size: 1.2em;
+      @include media($large-screen) {
+        font-size: ($base-font-size * 1.777);
+      }
+      color: $base-font-color;
+    }
+
+    h2 {
+      font-size: 1em;
+      margin-top: em(16);
+      line-height: $base-line-height;
+      @include media($large-screen) {
+        font-size: ($base-font-size * 1.333);
+      }
+    }
+
+    ul {
+      list-style-position: inside;
+      list-style-type: square;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+header.lead {
+
+  margin-top: 1.333em;
+  @include media($large-screen) {
+    @include span-columns(8);
+    @include shift(2);
+    padding-bottom: 1em;
+    margin-bottom: 1.777em;
+  }
+
+
+  h1 {
+    @include media($large-screen) {
+      font-size: $base-font-size * 2.369;
+      text-align: center;
+    }
+  }
+ 
+
+  p {
+    font-size: $base-font-size;
+    @include media($large-screen) {
+      font-size: ($base-font-size * 1.333);
+      line-height: 1.777em;
+    }
+  }
+}
