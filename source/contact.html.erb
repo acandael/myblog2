@@ -1,0 +1,43 @@
+---
+title: "Contact"
+description: "Let's talk about your website"
+---
+
+<section class="contact">
+  <div class="contactform">
+    <h1>Let's Talk About Your Website</h1>
+    <p>I'd love to hear about your web project and why you want to work with me. Let's get the conversation started.</p>
+    <form id="contactForm" action="/confirm">
+      <input  type="text" name="fullname" placeholder="fullname" autofocus required />
+      <input type="email" name="email" placeholder="email" />
+      <br />
+      <p>Tell me about your project. What are the goals, who are your visitors. Are there any special features that the website should have?</p>
+     <textarea name="message" rows="4" cols="50"></textarea> 
+     <input id="submit" type="submit" text="Submit">You will be contacted within the next 24hrs</input>
+    </form>
+  </div>
+  <aside>
+    <h2>Contact Information</h2>
+    <p>Anthony Candaele<br />
+    Smidsestraat 36<br />
+    9000 Ghent, Belgium</p>
+    <p>VAT BE0861.036.534</p>
+    <p><i class="fa fa-phone-square"></i><a href="tel:32498137260">+32 498 13 72 60</a></p>
+    <p><i class="fa fa-envelope"></i><a href="mailto:info@anthonycandaele.com">info@anthony.candaele.be</a></p>
+    <p><i class="fa fa-linkedin-square"></i><a href="https://be.linkedin.com/pub/anthony-candaele/2/885/83b/">connect with me on LinkedIn</a></p>
+  </aside>
+</section>
+<script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+<script>
+$("#contactForm").validate({
+  //debug: true,
+  rules: {
+    fullname: "required",
+    
+    email: {
+      required: true,
+      email: true
+    }
+  }
+});
+</script>

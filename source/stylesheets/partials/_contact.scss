@@ -1,0 +1,62 @@
+section.contact {
+  @include outer-container;
+  margin-top: 1.333em;
+  @include media($large-screen){
+    padding-top: 1.333em;
+    padding-bottom: 0.317em;
+  }
+
+  div.contactform {
+    padding-left: 0.563em;
+    padding-right: 0.563;
+    @include media($large-screen){
+      @include span-columns(7);
+    }
+      margin-bottom: 2.369em;
+      padding-bottom: 0.563em;
+
+    h1 {
+      font-size: ($base-font-size * 1.777);
+      @include media($large-screen){
+        font-size: 2.369em;
+      }
+      margin-bottom: 1.777em;
+    }
+    p {
+      font-size: ($base-font-size * 1.2);
+    }
+
+    form {
+      margin-top: 1.777;
+      padding-top: 0.563em;
+    }
+
+    input[type="submit"] {
+      @include media($large-screen){
+        float: right;
+      }
+    }
+  }
+
+  aside {
+    margin-left: 0.75em;
+    @include media($large-screen) {
+      @include span-columns(4);
+      @include shift(1);
+
+      h2 {
+        margin-bottom: 1.777em;
+      }
+    }
+  }
+
+  i {
+    color: $action-color;
+    margin-right: 0.422em;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
