@@ -3,7 +3,7 @@
   $large-screen: $large-screen;
   border-bottom: 1px solid $light-gray;
   @include media($large-screen) {
-    height: 5.61em;
+    height: 4.209em;
     padding-left: 3.157em;
     padding-right: 3.157em;
   }
@@ -32,9 +32,9 @@
   .navigation-wrapper {
     @include clearfix;
     position: relative;
-    padding-top: 0.563em;
+    padding-top: 0.422em;
     @include media($large-screen) {
-      padding-top: 1.777em;
+      padding-top: 1.333em;
     }
   }
 

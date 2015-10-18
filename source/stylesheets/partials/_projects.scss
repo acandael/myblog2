@@ -1,5 +1,6 @@
 section.portfolio {
   @include outer-container;
+  margin-top: 2.369em;
 
   @include media($large-screen) {
     padding-top: 1.333em;
@@ -11,9 +12,9 @@ section.portfolio {
     @include media($large-screen) {
       @include span-columns(12);
       margin-bottom: 3.157em;
-      margin-top: 2.396em;
+      margin-top: 2.369em;
+      padding-top: 0.563em;
     }
-
 
     div.screenshot {
       text-align: center;
@@ -72,7 +73,7 @@ section.portfolio {
 
 header.lead {
 
-  margin-top: 1.333em;
+  margin-top: 3.157em;
   @include media($large-screen) {
     @include span-columns(8);
     @include shift(2);
@@ -94,6 +95,7 @@ header.lead {
     @include media($large-screen) {
       font-size: ($base-font-size * 1.333);
       line-height: 1.777em;
+      padding-top: 0;
     }
   }
 }

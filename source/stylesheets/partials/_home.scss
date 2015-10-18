@@ -2,11 +2,11 @@ article#home {
   @include outer-container;
 
   #hero {
-  margin-bottom: em(36);
+  margin-bottom: 1.333em;
   margin-top: em(36);
   padding-left: em(25);
   padding-right: em(25);
-  padding-top: em(121.5);
+  padding-top: 5.61em;
   height: 17.713em;
     h1 {
       font-size: $base-font-size * 3.375;
@@ -34,7 +34,7 @@ article#home {
       }
 
       .line {
-        margin-bottom: em(36);
+        margin-bottom: 1.333em;
       }
 
       p {

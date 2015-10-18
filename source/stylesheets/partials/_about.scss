@@ -1,9 +1,9 @@
 section.about {
 
-  margin-top: 1.333em;
+  margin-top: 0.563em;
 
   @include media($large-screen){
-    margin-top: 4.209em;
+    margin-top: 5.61em;
     margin-bottom: 2.369em;
   }
 
@@ -24,10 +24,12 @@ section.about {
   article {
 
     padding-left: 0.563em;
+    margin-top: 0.563em;
 
     p {
       font-size: ($base-font-size * 1.333);
       line-height: 1.777em;
+      margin-bottom: 0.563em;
     }
 
     @include media($large-screen) {
