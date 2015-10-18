@@ -8,7 +8,7 @@ section.contact {
   }
 
   header {
-    margin-top: 3.57em;
+    margin-top: 3.157em;
     padding-top: 0px;
     padding-bottom: 1em;
     margin-bottom: 1.777em;
@@ -17,6 +17,11 @@ section.contact {
     h1 { 
       font-size: $base-font-size * 2.369;
       text-align: center;
+      margin-bottom: 0.563em;
+    }
+
+    .tagline {
+      font-size: $base-font-size * 1.333;
     }
   }
 
@@ -31,7 +36,6 @@ section.contact {
 
     form {
       margin-top: 1.777;
-      padding-top: 0.75em;
     }
 
     p {
@@ -47,15 +51,14 @@ section.contact {
 
   aside {
     margin-left: 0.75em;
-    margin-top: 1.333em;
     @include media($large-screen) {
       @include span-columns(4);
       @include shift(1);
 
       h2 {
-        margin-bottom: 1em;
         font-size: $base-font-size * 1.333;
       }
+
     }
   }
 
