@@ -1,29 +1,29 @@
 section.about {
 
-  margin-top: em(20);
+  margin-top: 1.333em;
 
   @include media($large-screen){
-    margin-top: em(80);
-    margin-bottom: em(40);
+    margin-top: 4.209em;
+    margin-bottom: 2.369em;
   }
 
   
   aside{
     text-align: center;
-    margin-bottom: em(10);
+    margin-bottom: 0.563em;
     @include media($large-screen) {
       @include span-columns(3);
       @include shift(1);
     }
     img {
-      padding-top: 5px;
+      padding-top: 0.317em;
       border-radius: 50%;
     }
   }
 
   article {
 
-    padding-left: 10px;
+    padding-left: 0.563em;
 
     p {
       font-size: ($base-font-size * 1.333);

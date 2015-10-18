@@ -2,8 +2,8 @@ section.portfolio {
   @include outer-container;
 
   @include media($large-screen) {
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding-top: 1.333em;
+    padding-bottom: 0.317em;
   }
 
   article {
@@ -23,7 +23,7 @@ section.portfolio {
       img {
         margin-bottom: 1.333em;
         border: 2px solid lighten($medium-gray, 15);
-        padding: 3px;
+        padding: 0.238em;
         width: 90%;
       }
     }
@@ -39,10 +39,14 @@ section.portfolio {
         padding-top: 0px;
         padding-left: 0px;
       }
+
+      i {
+        margin-right: 0.317em;
+      }
     }
 
     h1 {
-      font-size: 1.2em;
+      font-size: $base-font-size * 1.333;
       @include media($large-screen) {
         font-size: ($base-font-size * 1.777);
       }
@@ -50,8 +54,8 @@ section.portfolio {
     }
 
     h2 {
-      font-size: 1em;
-      margin-top: em(16);
+      font-size: $base-font-size * 1;
+      margin-top: 1em;
       line-height: $base-line-height;
       @include media($large-screen) {
         font-size: ($base-font-size * 1.333);

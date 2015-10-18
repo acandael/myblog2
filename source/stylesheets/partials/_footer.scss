@@ -1,17 +1,17 @@
 footer {
   width: 100%;
-  height: em(100);
+  height: 5.61em;
   clear: both;
-  margin-top: em(36);
-  padding-left: em(24);
-  padding-right: em(24);
+  margin-top: 2.369em;
+  padding-left: 1.333em;
+  padding-right: 1.333em;
 
   @include media($large-screen) {
-    padding-left: em(50);
-    padding-right: em(50);
+    padding-left: 3.157em;
+    padding-right: 3.157em;
   }
 
-  padding-top: em(25);
+  padding-top: 1.333em;
   border-top: 1px solid $light-gray;
 
   .copyright {
@@ -24,13 +24,13 @@ footer {
     li {
       display: inline;
       @include media($large-screen) {
-        margin-left: em(10);
+        margin-left: 0.563em;
       }
     }
   }
 
   i.fa {
-    font-size: $base-font-size * 1.5;
+    font-size: $base-font-size * 1.333;
     margin-right: 0;
   }
 }

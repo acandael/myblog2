@@ -40,19 +40,21 @@ section.contact {
 
   aside {
     margin-left: 0.75em;
+    margin-top: 1.333em;
     @include media($large-screen) {
       @include span-columns(4);
       @include shift(1);
 
       h2 {
-        margin-bottom: 1.777em;
+        margin-bottom: 1em;
+        font-size: $base-font-size * 1.333;
       }
     }
   }
 
   i {
     color: $action-color;
-    margin-right: 0.422em;
+    margin-right: 0.317em;
   }
 
   .hidden {

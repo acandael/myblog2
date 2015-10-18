@@ -3,9 +3,9 @@
   $large-screen: $large-screen;
   border-bottom: 1px solid $light-gray;
   @include media($large-screen) {
-    height: em(100);
-    padding-left: em(50);
-    padding-right: em(50);
+    height: 5.61em;
+    padding-left: 3.157em;
+    padding-right: 3.157em;
   }
 
   // Mobile view
@@ -13,14 +13,14 @@
     display: inline;
     float: right;
     margin: 0;
-    margin-right: 16px;
+    margin-right: 1em;
     @include media($large-screen) {
       padding-top: 0.5em;
     }
     font-weight: 700;
 
     i {
-      margin-right: em(8);
+      margin-right: 0.563em;
     }
 
     @include media ($large-screen) {
@@ -32,9 +32,9 @@
   .navigation-wrapper {
     @include clearfix;
     position: relative;
-    padding-top: em(8);
+    padding-top: 0.563em;
     @include media($large-screen) {
-      padding-top: em(25);
+      padding-top: 1.777em;
     }
   }
 
@@ -57,8 +57,8 @@
 
     @include media ($large-screen) {
       float: right;
-      line-height: 1.5em;
-      padding-top: 0.3em;
+      line-height: 1.777em;
+      padding-top: 0.422em;
     }
 
   }
