@@ -1,9 +1,23 @@
 section.contact {
   @include outer-container;
-  margin-top: 1.333em;
+  margin-top: 2.369em;
+
   @include media($large-screen){
     padding-top: 1.333em;
     padding-bottom: 0.317em;
+  }
+
+  header {
+    margin-top: 3.57em;
+    padding-top: 0px;
+    padding-bottom: 1em;
+    margin-bottom: 1.777em;
+    text-align: center;
+
+    h1 { 
+      font-size: $base-font-size * 2.369;
+      text-align: center;
+    }
   }
 
   div.contactform {
@@ -15,20 +29,13 @@ section.contact {
       margin-bottom: 2.369em;
       padding-bottom: 0.563em;
 
-    h1 {
-      font-size: ($base-font-size * 1.777);
-      @include media($large-screen){
-        font-size: 2.369em;
-      }
-      margin-bottom: 1.777em;
-    }
-    p {
-      font-size: ($base-font-size * 1.2);
-    }
-
     form {
       margin-top: 1.777;
-      padding-top: 0.563em;
+      padding-top: 0.75em;
+    }
+
+    p {
+      font-size: ($base-font-size * 1.2);
     }
 
     input[type="submit"] {
