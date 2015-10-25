@@ -1,15 +1,15 @@
 <% wrap_layout :layout do %>
   <div id="blog">
     <article class="blogpost">
-      <footer>
+      <header>
+        <h1><%= current_article.title %></h1>
+      </header>
+      <footer class="date">
         <time datetime="<%= current_article.date %>"><%= current_article.date.strftime('%b %e %Y') %> by Anthony Candaele</time>      
         <span class="social"><i class="fa fa-twitter-square"></i>
 <a href="https://twitter.com/share" data-via="acandael" data-count="none" data-dnt="true">Tweet</a>
         </span>
     </footer>
-    <header>
-      <h1><%= current_article.title %></h1>
-    </header>
     <div class="line">&nbsp;</div>
       <div class="bodytext">
         <%= yield %>

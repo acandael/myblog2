@@ -12,8 +12,7 @@ title: Welcome to Middleman
     <div class="box">
       <h2>About My Work</h2>
       <div class="line">&nbsp;</div>
-      <p>I'm Anthony Candaele, a web developer living in Gent (Belgium).
-      I'm taking proud in building custom websites that are tailored to your business.</p>
+      <p>I'm Anthony Candaele, a web developer specialized in building web applications with Ruby on Rails. I'm taking proud in building custom websites that are tailored to your business and needs.</p>
     </div>
     <div class="box">
       <h2>Latest Project</h2>
@@ -25,8 +24,9 @@ title: Welcome to Middleman
     <div class="box">
       <h2>Blog</h2>
       <div class="line">&nbsp;</div>
-      <p>Easy file uploads in Rails with Refile</p>
-      <p>Adding Pagination To Your Rails App with Kaminari</p>
+        <% page_articles.each_with_index do |article, i| %>
+          <p><%= link_to article.title, article %></p>
+        <% end %>
     </div>
   </div>
 </article>
