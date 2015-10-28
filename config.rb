@@ -109,22 +109,3 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-#Filewatcher ignore list
-set :file_watcher_ignore,[
-    /^bin(\/|$)/,
-    /^\.bundle(\/|$)/,
-#        /^vendor(\/|$)/,
-    /^node_modules(\/|$)/,
-    /^\.sass-cache(\/|$)/,
-    /^\.cache(\/|$)/,
-    /^\.git(\/|$)/,
-    /^\.gitignore$/,
-    /\.DS_Store/,
-    /^\.rbenv-.*$/,
-    /^Gemfile$/,
-    /^Gemfile\.lock$/,
-    /~$/,
-    /(^|\/)\.?#/,
-    /^tmp\//
-  ]
-
