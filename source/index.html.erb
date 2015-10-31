@@ -25,7 +25,8 @@ title: Welcome to Middleman
       <h2>Blog</h2>
       <div class="line">&nbsp;</div>
       <% page_articles[0...3].each do |article| %>
-          <p><%= link_to article.title, article %></p>
+          <div class="date"><time datetime="<%= article.date %>"><%= article.date.strftime('%b %e %Y') %></time></div>
+        <p><%= link_to article.title, article %></p>
         <% end %>
     </div>
   </div>

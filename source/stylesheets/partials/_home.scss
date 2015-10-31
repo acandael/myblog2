@@ -40,6 +40,10 @@ article#home {
       p {
         font-size: $base-font-size * 1;
       }
+
+      div.date {
+        font-size: $base-font-size * 0.9;
+      }
     }
   }
 }
