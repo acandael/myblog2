@@ -61,6 +61,16 @@
       padding-top: 0.422em;
     }
 
+    .social {
+        a { 
+        color: $action-color;
+        }
+        i {
+          padding-right: .2em;
+          color: $action-color;
+        }
+    }
+
   }
 
   ul.navigation-menu {
