@@ -2,14 +2,18 @@ article#home {
   @include outer-container;
 
   #hero {
-  margin-bottom: 1.333em;
-  margin-top: em(36);
-  padding-left: em(25);
-  padding-right: em(25);
-  padding-top: 5.61em;
-  height: 17.713em;
+      margin-top: em(36);
+      margin-bottom: 1.333em;
+    @include media($medium-screen) {
+      padding-left: em(25);
+      padding-right: em(25);
+      padding-top: 5.61em;
+      height: 17.713em;
+    }
     h1 {
-      font-size: $base-font-size * 3.375;
+      @include media($medium-screen) {
+        font-size: $base-font-size * 3.375;
+      }
       font-weight: 400;
       font-style: italic;
       text-align: center;
@@ -17,16 +21,24 @@ article#home {
   }
 
   #boxes {
-    @include span-columns(12);
+    @include media($medium-screen) {
+      @include span-columns(12);
+    }
     margin-bottom: em(54);
 
     .box {
-      @include span-columns(4 of 12);
+      @include media($medium-screen) {
+        @include span-columns(4 of 12);
+      }
       padding-left: 16px;
       padding-right: 16px;
       h2 {
         font-size: $base-font-size * 1.777;
         font-weight: 400;
+        text-align: center;
+        @include media($medium-screen) {
+          text-align: left;
+        }
       }
       h3 {
         font-size: $base-font-size * 1.333;
