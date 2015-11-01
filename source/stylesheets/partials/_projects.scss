@@ -9,6 +9,7 @@ section.portfolio {
 
   article {
 
+    margin-bottom: 2.369em;
     @include media($large-screen) {
       @include span-columns(12);
       margin-bottom: 3.157em;
@@ -74,6 +75,9 @@ section.portfolio {
 header.lead {
 
   margin-top: 3.157em;
+  margin-bottom: 2.369em;
+  margin-left: 1em;
+  margin-right: 1em;
   @include media($large-screen) {
     @include span-columns(8);
     @include shift(2);
@@ -83,15 +87,16 @@ header.lead {
 
 
   h1 {
+      font-size: $base-font-size * 1.777;
+      text-align: center;
     @include media($large-screen) {
       font-size: $base-font-size * 2.369;
-      text-align: center;
     }
   }
  
 
   p {
-    font-size: $base-font-size;
+    font-size: $base-font-size * 1.333;
     @include media($large-screen) {
       font-size: ($base-font-size * 1.333);
       line-height: 1.777em;
