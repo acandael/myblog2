@@ -1,7 +1,7 @@
 #blog {
   @include outer-container;
-  padding-left: 1.777em;
-  padding-right: 1.777em;
+  padding-left: 1em;
+  padding-right: 1em;
   margin-top: 2.369em;
   @include media($large-screen){
     @include span-columns(12);
