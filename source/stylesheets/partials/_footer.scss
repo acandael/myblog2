@@ -14,24 +14,18 @@ footer {
   padding-top: 1.333em;
   border-top: 1px solid $light-gray;
 
-  .copyright {
-    float: left;
-  }
+  
 
   .contact {
-    float: left;
-    margin-left: 1.777em;
   }
 
   .social {
     float: right;
+  }
 
-    li {
-      display: inline;
-      @include media($large-screen) {
-        margin-left: 0.563em;
-      }
-    }
+  li { 
+    float: left; 
+    margin-left: 1em;
   }
   i.fa {
     font-size: $base-font-size * 1.333;

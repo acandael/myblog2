@@ -11,6 +11,7 @@ article#home {
       height: 17.713em;
     }
     h1 {
+      font-size: $base-font-size * 2.369;
       @include media($medium-screen) {
         font-size: $base-font-size * 3.375;
       }
@@ -33,7 +34,10 @@ article#home {
       padding-left: 16px;
       padding-right: 16px;
       h2 {
-        font-size: $base-font-size * 1.777;
+        font-size: $base-font-size * 1.333;
+        @include media($medium-screen) {
+          font-size: $base-font-size * 1.777;
+        }
         font-weight: 400;
         text-align: center;
         @include media($medium-screen) {
