@@ -24,7 +24,7 @@ priority: 1.0
     <p class="date">
       <time datetime="<%= article.date %>"><%= article.date.strftime('%b %e %Y') %></time>
     </p>
-    <p class="summary"><%= article.summary %></p>
+    <p><%= article.summary %></p>
     <%= link_to 'Read more&hellip;', article, class: "more" %>
     <div class="line">&nbsp;</div>
   </div>

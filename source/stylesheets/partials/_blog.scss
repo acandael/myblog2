@@ -31,7 +31,7 @@
     }
   }
 
-  .blogarticle {
+  div.blogarticle {
     @include media($large-screen){
       @include span-columns(7); 
       clear: both;
@@ -46,7 +46,7 @@
       text-align: center;
     }
 
-    p.summary {
+    p {
       font-size: $base-font-size * 1.333;
     }
 
