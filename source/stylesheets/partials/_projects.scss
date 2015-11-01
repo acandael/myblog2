@@ -10,6 +10,8 @@ section.portfolio {
   article {
 
     margin-bottom: 2.369em;
+
+
     @include media($large-screen) {
       @include span-columns(12);
       margin-bottom: 3.157em;
@@ -69,6 +71,7 @@ section.portfolio {
       list-style-type: square;
       margin-bottom: 1em;
     }
+
   }
 }
 
