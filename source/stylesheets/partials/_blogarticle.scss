@@ -30,6 +30,12 @@
     h1 {
       text-align: left;
     }
+
+    .social {
+      @include media($medium-screen) {
+        float: right;
+      }
+    }
   }
   .bodytext {
     margin-top: 1.777em;
