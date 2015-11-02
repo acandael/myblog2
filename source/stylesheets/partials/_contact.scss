@@ -26,8 +26,10 @@ section.contact {
   }
 
   div.contactform {
-    padding-left: 0.563em;
-    padding-right: 0.563;
+    @include media($medium-screen) {
+      padding-left: 0.563em;
+      padding-right: 0.563;
+    }
     @include media($large-screen){
       @include span-columns(7);
     }
