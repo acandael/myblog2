@@ -43,7 +43,7 @@ section.contact {
     }
 
     input[type=submit] {
-      margin-right: 1em;
+      margin-right: 0.75em;
       @include media($medium-screen) {
         margin-right: 0;
       }
