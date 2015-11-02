@@ -91,6 +91,9 @@ set :markdown, :layout_engine => :erb,
                :smartypants => true,
                :with_toc_data => true
 
+set :url_root, 'http://anthonycandaele.com'
+activate :search_engine_sitemap
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -108,4 +111,23 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+#Filewatcher ignore list
+set :file_watcher_ignore,[
+    /^bin(\/|$)/,
+    /^\.bundle(\/|$)/,
+#        /^vendor(\/|$)/,
+    /^node_modules(\/|$)/,
+    /^\.sass-cache(\/|$)/,
+    /^\.cache(\/|$)/,
+    /^\.git(\/|$)/,
+    /^\.gitignore$/,
+    /\.DS_Store/,
+    /^\.rbenv-.*$/,
+    /^Gemfile$/,
+    /^Gemfile\.lock$/,
+    /~$/,
+    /(^|\/)\.?#/,
+    /^tmp\//
+  ]
 
