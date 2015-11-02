@@ -3,8 +3,6 @@ footer {
   height: 5.61em;
   clear: both;
   margin-top: 2.369em;
-  padding-left: 1.333em;
-  padding-right: 1.333em;
 
   @include media($large-screen) {
     padding-left: 3.157em;
@@ -17,10 +15,6 @@ footer {
   
 
   .contact {
-  }
-
-  .social {
-    float: right;
   }
 
   li { 
