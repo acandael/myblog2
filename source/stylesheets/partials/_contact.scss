@@ -42,6 +42,13 @@ section.contact {
       margin-top: 1.777;
     }
 
+    input[type=submit] {
+      margin-right: 1em;
+      @include media($medium-screen) {
+        margin-right: 0;
+      }
+    }
+
     p {
       font-size: ($base-font-size * 1.2);
     }
