@@ -29,3 +29,9 @@ div.line {
   font-size: $base-font-size * 1.5;
 }
 
+.more {
+  //float: right;
+  text-decoration: underline;
+  color: $base-font-color;
+}
+

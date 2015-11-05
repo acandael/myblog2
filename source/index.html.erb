@@ -13,7 +13,7 @@ title: Welcome to Middleman
       <h2>About My Work</h2>
       <div class="line">&nbsp;</div>
       <p>I'm Anthony Candaele, a web developer specialized in building web applications with Ruby on Rails. I'm taking proud in building custom websites that are tailored to your business and needs.</p>
-      <p class="more-info"><a href="/about.html">Read more &hellip;</a></p>
+      <%= link_to "Read more&hellip;", "/about.html", class: "more" %>
     </div>
     <div class="box">
       <h2>Latest Project</h2>
@@ -29,6 +29,7 @@ title: Welcome to Middleman
           <div class="date"><time datetime="<%= article.date %>"><%= article.date.strftime('%b %e %Y') %></time></div>
         <p><%= link_to article.title, article %></p>
         <% end %>
+        <%= link_to "All articles", "/blog.html", class: "more" %></a>
     </div>
   </div>
 </article>
