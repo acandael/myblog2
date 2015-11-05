@@ -32,7 +32,7 @@
 
   div.blogarticle {
     @include media($large-screen){
-      @include span-columns(7); 
+      @include span-columns(9); 
       clear: both;
     }
     margin-bottom: 3.157em;
