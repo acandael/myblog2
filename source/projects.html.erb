@@ -8,40 +8,7 @@ description: "A selection of my work. All websites are responsive and have a CMS
   <h1>Portfolio</h1>
   <p class="tagline">Here's a selection of my work. All websites are custom build and can be accessed on a broad range of devices like smartphones, tablets, laptops &hellip;</p>
 </header>
-  <article>
-    <div class="screenshot">
-      <img src="images/homepage_actionmaker.jpg", alt: "screenshot homepage ActionMaker"/>
-    </div>
-    <div class="description">
-      <header>
-        <h1>Events agency ActionMaker</h1>
-        <span class="website"><span class="website"><i class="fa fa-link"></i><a href="http://www.actionmaker.be">www.actionmaker.be</a></span>
-      </header>
-      <h2>Features</h2>
-      <ul class="features">
-        <li>Responsive images</li>
-        <li>Responsive event slider and image gallery</li>
-        <li>Can be viewed on smartphones, tablets, desktops and laptops</li>
-      </ul>
-      <p>Event agency organizing teambuilding events and bachelor parties. What better way than to present teambuilding with photo's, lot's of photo's. Each teambuilding activity is presented with a responsive image gallery and a contact form.</p>
-    </div>
-  </article>
-  <article>
-    <div class="screenshot">
-      <img src="images/homepage-anniek-lambrecht.jpg", alt: "screenshot homepage anniek lambrecht"/>
-    </div>
-    <div class="description">
-      <header>
-        <h1>Schoonheidsspecialiste Anniek Lambrecht</h1>
-        <span class="website"><i class="fa fa-link"></i><a href="http://www.anniek-lambrecht.be">www.anniek-lambrecht.be</a></span>
-      </header>
-      <h2>Features</h2>
-      <ul class="features">
-        <li>Ruby on Rails web application</li>
-        <li>Content Management functionality</li>
-        <li>Can be viewed on smartphones, tablets, desktops and laptops</li>
-      </ul>
-      <p>Website for cosmetologist. Visitors can check the treatments and products. The owner can easily update the treatments, promo actions and products.</p>
-    </div>
-  </article>
+<% data.projects.each do |project| %>
+    <%= partial "project", locals: { project: project } %>
+  <% end %>
 </section>

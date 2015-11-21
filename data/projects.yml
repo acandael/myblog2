@@ -1,0 +1,17 @@
+- name: Events agency ActionMaker
+  image: homepage_actionmaker.jpg
+  website: http://www.actionmaker.be 
+  features:
+    - Responsive images
+    - Responsive event slider and image gallery
+    - Can be viewed on smartphones, tablets, desktops and laptop
+  description: Event agency organizing teambuilding events and bachelor parties. What better way than to present teambuilding with photo's, lot's of photo's. Each teambuilding activity is presented with a responsive image gallery and a contact form.
+
+- name: Schoonheidsspecialiste Anniek Lambrecht
+  image: homepage-anniek-lambrecht.jpg
+  website: http://www.anniek-lambrecht.be
+  features:
+    - Ruby on Rails web application
+    - Content Management functionality
+    - Can be viewed on smartphones, tablets, desktops and laptops
+  description: Website for cosmetologist. Visitors can check the treatments and products. The owner can easily update the treatments, promo actions and products.

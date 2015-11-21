@@ -1,0 +1,18 @@
+<article>
+  <div class="screenshot">
+    <%= image_tag project["image"] %>
+  </div>
+  <div class="description">
+    <header>
+      <h1><%= project["name"] %></h1>
+      <span class="website"><span class="website"><i class="fa fa-link"></i><%= link_to project["website"] %></span>
+    </header>
+    <h2>Features</h2>
+    <ul class="features">
+      <% project["features"].each do |feature| %>
+        <li><%= feature %></li>
+      <% end %>
+    </ul>
+    <p><%= project["description"] %></p>
+  </div>
+</article>
