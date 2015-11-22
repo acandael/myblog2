@@ -4,7 +4,7 @@ date: 2015-11-21 15:20 UTC
 tags:
 ---
 
-Lately static website generators are booming. I won't talk here about why and how of static website generators, for that I refer to the excellent article by Mathias Biilmann, [Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/). I can also refer to this [review of some static site generators](http://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/) by the same author. I love Middleman because it gives me the power of Ruby on Rails without the deployment headaches.
+Lately static website generators are booming. I won't talk here about why and how of static website generators, for that I refer to the excellent article by Mathias Biilmann, [Why Static Website Generators Are The Next Big Thing](http://www.smashingmagazine.com/2015/11/modern-static-website-generators-next-big-thing/). I can also refer to this [review of some static site generators](http://www.smashingmagazine.com/2015/11/static-website-generators-jekyll-middleman-roots-hugo-review/) by the same author. I love [Middleman](https://middlemanapp.com/) because it gives me the power of Ruby on Rails without the deployment headaches.
 
 In this article I want to show you how I cleaned up static html by the use of partials and the data folder. The **data** folder is Middleman's replacement for a database. You can store data in this folder as .yml files.
 
